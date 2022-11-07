@@ -1,0 +1,33 @@
+<!doctype html>
+
+<html lang="ja">
+    <head>
+        <meta http-equiv="content-type" content="text/html"; charset="utf-8">
+        <title>FixCode</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+
+    <body>
+        
+        
+        <div id="app">
+            <a>回数 :</a>
+            <input class="inputTimes" type="text" v-model="times">
+            <Button v-on:click="addVarI">変数を追加</Button>
+            <Button v-on:click="timesText">実行</Button>
+            <textarea  cols="20" rows="4" v-model="array" spellcheck="false"></textarea>
+            <Button v-on:click="addVarArray">配列の変数を追加</Button>
+            <Button v-on:click="timesTextOnArray">配列で実行</Button>
+            <p>省く文字</p><input class="inputOmitChar" type="text" v-model="omitChar">
+
+
+
+            <textarea id="fixTextArea" cols="80" rows="10" v-model="fixText" spellcheck="false"></textarea>
+            <h1>↓</h1>
+            <textarea id="fixedTextArea" cols="80" rows="10" spellcheck="false">{{ fixedText }}</textarea>
+        </div>
+        <!-- 確かVueJSのスクリプトはbodyの一番下に書かなければいけない -->
+        <script src="./vue.js"></script>
+        <script src="./template.js"></script>
+    </body>
+</html>

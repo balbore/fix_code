@@ -1,0 +1,13 @@
+.inputTimes, .inputOmitChar {
+    width: 2em;
+}
+
+#fixTextArea{
+    display: block;
+    background-color: rgb(134, 134, 200);
+}
+
+#fixedTextArea{
+    display: block;
+    background-color: lightseagreen;
+}
